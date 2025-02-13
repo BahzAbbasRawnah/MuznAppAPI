@@ -1,0 +1,119 @@
+{
+    "info": {
+        "name": "MuznAPI Collection",
+        "description": "API endpoints for MuznAPI",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Users",
+            "item": [
+                { "name": "Get All Users", "request": { "method": "GET", "header": [], "url": { "raw": "http://localhost/api/users", "protocol": "http", "host": ["localhost"], "path": ["api", "users"] } } },
+                { "name": "Get User", "request": { "method": "GET", "header": [], "url": { "raw": "http://localhost/api/users/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "users", "{id}"] } } },
+                { "name": "Create User", "request": { "method": "POST", "header": [], "url": { "raw": "http://localhost/api/users", "protocol": "http", "host": ["localhost"], "path": ["api", "users"] }, "body": { "mode": "raw", "raw": "{\"full_name\":\"John Doe\",\"email\":\"john@example.com\",\"password\":\"password123\",\"phone\":\"1234567890\",\"country\":\"Country\",\"gender\":\"male\",\"role\":\"student\",\"status\":\"active\"}" } } },
+                { "name": "Update User", "request": { "method": "PUT", "header": [], "url": { "raw": "http://localhost/api/users/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "users", "{id}"] }, "body": { "mode": "raw", "raw": "{\"full_name\":\"John Doe Updated\"}" } } },
+                { "name": "Delete User", "request": { "method": "DELETE", "header": [], "url": { "raw": "http://localhost/api/users/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "users", "{id}"] } } }
+            ]
+        },
+        {
+            "name": "Schools",
+            "item": [
+                { "name": "Get All Schools", "request": { "method": "GET", "header": [], "url": { "raw": "http://localhost/api/schools", "protocol": "http", "host": ["localhost"], "path": ["api", "schools"] } } },
+                { "name": "Get School", "request": { "method": "GET", "header": [], "url": { "raw": "http://localhost/api/schools/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "schools", "{id}"] } } },
+                { "name": "Create School", "request": { "method": "POST", "header": [], "url": { "raw": "http://localhost/api/schools", "protocol": "http", "host": ["localhost"], "path": ["api", "schools"] }, "body": { "mode": "raw", "raw": "{\"teacher_id\":1,\"name\":\"School Name\",\"type\":\"Public\",\"address\":\"School Address\"}" } } },
+                { "name": "Update School", "request": { "method": "PUT", "header": [], "url": { "raw": "http://localhost/api/schools/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "schools", "{id}"] }, "body": { "mode": "raw", "raw": "{\"name\":\"Updated School Name\"}" } } },
+                { "name": "Delete School", "request": { "method": "DELETE", "header": [], "url": { "raw": "http://localhost/api/schools/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "schools", "{id}"] } } }
+            ]
+        },
+        {
+            "name": "Circles Categories",
+            "item": [
+                { "name": "Get All Circles Categories", "request": { "method": "GET", "header": [], "url": { "raw": "http://localhost/api/circles-categories", "protocol": "http", "host": ["localhost"], "path": ["api", "circles-categories"] } } },
+                { "name": "Get Circles Category", "request": { "method": "GET", "header": [], "url": { "raw": "http://localhost/api/circles-categories/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "circles-categories", "{id}"] } } },
+                { "name": "Create Circles Category", "request": { "method": "POST", "header": [], "url": { "raw": "http://localhost/api/circles-categories", "protocol": "http", "host": ["localhost"], "path": ["api", "circles-categories"] }, "body": { "mode": "raw", "raw": "{\"name\":\"Category Name\",\"namevalue\":\"Category Value\"}" } } },
+                { "name": "Update Circles Category", "request": { "method": "PUT", "header": [], "url": { "raw": "http://localhost/api/circles-categories/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "circles-categories", "{id}"] }, "body": { "mode": "raw", "raw": "{\"name\":\"Updated Category Name\"}" } } },
+                { "name": "Delete Circles Category", "request": { "method": "DELETE", "header": [], "url": { "raw": "http://localhost/api/circles-categories/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "circles-categories", "{id}"] } } }
+            ]
+        },
+        {
+            "name": "Circles",
+            "item": [
+                { "name": "Get All Circles", "request": { "method": "GET", "header": [], "url": { "raw": "http://localhost/api/circles", "protocol": "http", "host": ["localhost"], "path": ["api", "circles"] } } },
+                { "name": "Get Circle", "request": { "method": "GET", "header": [], "url": { "raw": "http://localhost/api/circles/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "circles", "{id}"] } } },
+                { "name": "Create Circle", "request": { "method": "POST", "header": [], "url": { "raw": "http://localhost/api/circles", "protocol": "http", "host": ["localhost"], "path": ["api", "circles"] }, "body": { "mode": "raw", "raw": "{\"school_id\":1,\"teacher_id\":1,\"name\":\"Circle Name\",\"description\":\"Circle Description\",\"circle_category_id\":1,\"circle_type\":\"Type\",\"circle_time\":\"Time\",\"jitsi_link\":\"https://example.com\",\"recording_url\":\"https://example.com/recording\"}" } } },
+                { "name": "Update Circle", "request": { "method": "PUT", "header": [], "url": { "raw": "http://localhost/api/circles/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "circles", "{id}"] }, "body": { "mode": "raw", "raw": "{\"name\":\"Updated Circle Name\"}" } } },
+                { "name": "Delete Circle", "request": { "method": "DELETE", "header": [], "url": { "raw": "http://localhost/api/circles/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "circles", "{id}"] } } }
+            ]
+        },
+        {
+            "name": "Students",
+            "item": [
+                { "name": "Get All Students", "request": { "method": "GET", "header": [], "url": { "raw": "http://localhost/api/students", "protocol": "http", "host": ["localhost"], "path": ["api", "students"] } } },
+                { "name": "Get Student", "request": { "method": "GET", "header": [], "url": { "raw": "http://localhost/api/students/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "students", "{id}"] } } },
+                { "name": "Create Student", "request": { "method": "POST", "header": [], "url": { "raw": "http://localhost/api/students", "protocol": "http", "host": ["localhost"], "path": ["api", "students"] }, "body": { "mode": "raw", "raw": "{\"teacher_id\":1,\"user_id\":1}" } } },
+                { "name": "Update Student", "request": { "method": "PUT", "header": [], "url": { "raw": "http://localhost/api/students/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "students", "{id}"] }, "body": { "mode": "raw", "raw": "{\"teacher_id\":2}" } } },
+                { "name": "Delete Student", "request": { "method": "DELETE", "header": [], "url": { "raw": "http://localhost/api/students/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "students", "{id}"] } } }
+            ]
+        },
+        {
+            "name": "Circle Students",
+            "item": [
+                { "name": "Get All Circle Students", "request": { "method": "GET", "header": [], "url": { "raw": "http://localhost/api/circle-students", "protocol": "http", "host": ["localhost"], "path": ["api", "circle-students"] } } },
+                { "name": "Get Circle Student", "request": { "method": "GET", "header": [], "url": { "raw": "http://localhost/api/circle-students/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "circle-students", "{id}"] } } },
+                { "name": "Create Circle Student", "request": { "method": "POST", "header": [], "url": { "raw": "http://localhost/api/circle-students", "protocol": "http", "host": ["localhost"], "path": ["api", "circle-students"] }, "body": { "mode": "raw", "raw": "{\"circle_id\":1,\"student_id\":1,\"teacher_id\":1}" } } },
+                { "name": "Update Circle Student", "request": { "method": "PUT", "header": [], "url": { "raw": "http://localhost/api/circle-students/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "circle-students", "{id}"] }, "body": { "mode": "raw", "raw": "{\"circle_id\":2}" } } },
+                { "name": "Delete Circle Student", "request": { "method": "DELETE", "header": [], "url": { "raw": "http://localhost/api/circle-students/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "circle-students", "{id}"] } } }
+            ]
+        },
+        {
+            "name": "Student Attendances",
+            "item": [
+                { "name": "Get All Student Attendances", "request": { "method": "GET", "header": [], "url": { "raw": "http://localhost/api/student-attendances", "protocol": "http", "host": ["localhost"], "path": ["api", "student-attendances"] } } },
+                { "name": "Get Student Attendance", "request": { "method": "GET", "header": [], "url": { "raw": "http://localhost/api/student-attendances/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "student-attendances", "{id}"] } } },
+                { "name": "Create Student Attendance", "request": { "method": "POST", "header": [], "url": { "raw": "http://localhost/api/student-attendances", "protocol": "http", "host": ["localhost"], "path": ["api", "student-attendances"] }, "body": { "mode": "raw", "raw": "{\"student_id\":1,\"circle_id\":1,\"attendance_date\":\"2025-02-13\",\"status\":\"present\"}" } } },
+                { "name": "Update Student Attendance", "request": { "method": "PUT", "header": [], "url": { "raw": "http://localhost/api/student-attendances/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "student-attendances", "{id}"] }, "body": { "mode": "raw", "raw": "{\"status\":\"absent\"}" } } },
+                { "name": "Delete Student Attendance", "request": { "method": "DELETE", "header": [], "url": { "raw": "http://localhost/api/student-attendances/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "student-attendances", "{id}"] } } }
+            ]
+        },
+        {
+            "name": "Homeworks",
+            "item": [
+                { "name": "Get All Homeworks", "request": { "method": "GET", "header": [], "url": { "raw": "http://localhost/api/homeworks", "protocol": "http", "host": ["localhost"], "path": ["api", "homeworks"] } } },
+                { "name": "Get Homework", "request": { "method": "GET", "header": [], "url": { "raw": "http://localhost/api/homeworks/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "homeworks", "{id}"] } } },
+                { "name": "Create Homework", "request": { "method": "POST", "header": [], "url": { "raw": "http://localhost/api/homeworks", "protocol": "http", "host": ["localhost"], "path": ["api", "homeworks"] }, "body": { "mode": "raw", "raw": "{\"circle_id\":1,\"circle_category_id\":1,\"student_id\":1,\"start_surah_number\":1,\"end_surah_number\":2,\"start_ayah_number\":1,\"end_ayah_number\":10,\"homework_date\":\"2025-02-13\",\"checked\":0,\"notes\":\"Some notes\"}" } } },
+                { "name": "Update Homework", "request": { "method": "PUT", "header": [], "url": { "raw": "http://localhost/api/homeworks/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "homeworks", "{id}"] }, "body": { "mode": "raw", "raw": "{\"notes\":\"Updated notes\"}" } } },
+                { "name": "Delete Homework", "request": { "method": "DELETE", "header": [], "url": { "raw": "http://localhost/api/homeworks/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "homeworks", "{id}"] } } }
+            ]
+        },
+        {
+            "name": "Student Progresses",
+            "item": [
+                { "name": "Get All Student Progresses", "request": { "method": "GET", "header": [], "url": { "raw": "http://localhost/api/student-progresses", "protocol": "http", "host": ["localhost"], "path": ["api", "student-progresses"] } } },
+                { "name": "Get Student Progress", "request": { "method": "GET", "header": [], "url": { "raw": "http://localhost/api/student-progresses/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "student-progresses", "{id}"] } } },
+                { "name": "Create Student Progress", "request": { "method": "POST", "header": [], "url": { "raw": "http://localhost/api/student-progresses", "protocol": "http", "host": ["localhost"], "path": ["api", "student-progresses"] }, "body": { "mode": "raw", "raw": "{\"homework_id\":1,\"student_id\":1,\"reading_rating\":\"good\",\"review_rating\":\"good\",\"telawah_rating\":\"good\",\"reading_wrong\":0,\"tajweed_wrong\":0,\"tashqeel_wrong\":0}" } } },
+                { "name": "Update Student Progress", "request": { "method": "PUT", "header": [], "url": { "raw": "http://localhost/api/student-progresses/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "student-progresses", "{id}"] }, "body": { "mode": "raw", "raw": "{\"reading_rating\":\"excellent\"}" } } },
+                { "name": "Delete Student Progress", "request": { "method": "DELETE", "header": [], "url": { "raw": "http://localhost/api/student-progresses/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "student-progresses", "{id}"] } } }
+            ]
+        },
+        {
+            "name": "Digital Libraries",
+            "item": [
+                { "name": "Get All Digital Libraries", "request": { "method": "GET", "header": [], "url": { "raw": "http://localhost/api/digital-libraries", "protocol": "http", "host": ["localhost"], "path": ["api", "digital-libraries"] } } },
+                { "name": "Get Digital Library", "request": { "method": "GET", "header": [], "url": { "raw": "http://localhost/api/digital-libraries/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "digital-libraries", "{id}"] } } },
+                { "name": "Create Digital Library", "request": { "method": "POST", "header": [], "url": { "raw": "http://localhost/api/digital-libraries", "protocol": "http", "host": ["localhost"], "path": ["api", "digital-libraries"] }, "body": { "mode": "raw", "raw": "{\"title\":\"Library Title\",\"author\":\"Author Name\",\"category\":\"Category Name\",\"file_url\":\"https://example.com/file.pdf\",\"teacher_id\":1}" } } },
+                { "name": "Update Digital Library", "request": { "method": "PUT", "header": [], "url": { "raw": "http://localhost/api/digital-libraries/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "digital-libraries", "{id}"] }, "body": { "mode": "raw", "raw": "{\"title\":\"Updated Library Title\"}" } } },
+                { "name": "Delete Digital Library", "request": { "method": "DELETE", "header": [], "url": { "raw": "http://localhost/api/digital-libraries/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "digital-libraries", "{id}"] } } }
+            ]
+        },
+        {
+            "name": "Settings",
+            "item": [
+                { "name": "Get All Settings", "request": { "method": "GET", "header": [], "url": { "raw": "http://localhost/api/settings", "protocol": "http", "host": ["localhost"], "path": ["api", "settings"] } } },
+                { "name": "Get Setting", "request": { "method": "GET", "header": [], "url": { "raw": "http://localhost/api/settings/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "settings", "{id}"] } } },
+                { "name": "Create Setting", "request": { "method": "POST", "header": [], "url": { "raw": "http://localhost/api/settings", "protocol": "http", "host": ["localhost"], "path": ["api", "settings"] }, "body": { "mode": "raw", "raw": "{\"name\":\"Setting Name\",\"logo_url\":\"https://example.com/logo.png\",\"address\":\"Address\",\"phone\":\"123456789\",\"email\":\"email@example.com\",\"website_url\":\"https://example.com\",\"video_server_url\":\"https://video.example.com\",\"support_email\":\"support@example.com\",\"social_media_links\":\"https://socialmedia.com\"}" } } },
+                { "name": "Update Setting", "request": { "method": "PUT", "header": [], "url": { "raw": "http://localhost/api/settings/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "settings", "{id}"] }, "body": { "mode": "raw", "raw": "{\"name\":\"Updated Setting Name\"}" } } },
+                { "name": "Delete Setting", "request": { "method": "DELETE", "header": [], "url": { "raw": "http://localhost/api/settings/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "settings", "{id}"] } } }
+            ]
+        }
+    ]
+}
