@@ -10,7 +10,7 @@
             "item": [
                 { "name": "Get All Users", "request": { "method": "GET", "header": [], "url": { "raw": "http://localhost/api/users", "protocol": "http", "host": ["localhost"], "path": ["api", "users"] } } },
                 { "name": "Get User", "request": { "method": "GET", "header": [], "url": { "raw": "http://localhost/api/users/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "users", "{id}"] } } },
-                { "name": "Create User", "request": { "method": "POST", "header": [], "url": { "raw": "http://localhost/api/users", "protocol": "http", "host": ["localhost"], "path": ["api", "users"] }, "body": { "mode": "raw", "raw": "{\"full_name\":\"John Doe\",\"email\":\"john@example.com\",\"password\":\"password123\",\"phone\":\"1234567890\",\"country\":\"Country\",\"gender\":\"male\",\"role\":\"student\",\"status\":\"active\"}" } } },
+                { "name": "Create User", "request": { "method": "POST", "header": [], "url": { "raw": "http://localhost/api/users", "protocol": "http", "host": ["localhost"], "path": ["api", "users"] }, "body": { "mode": "json", "raw": "{\"full_name\":\"John Doe\",\"email\":\"john@example.com\",\"password\":\"password123\"}" } } },
                 { "name": "Update User", "request": { "method": "PUT", "header": [], "url": { "raw": "http://localhost/api/users/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "users", "{id}"] }, "body": { "mode": "raw", "raw": "{\"full_name\":\"John Doe Updated\"}" } } },
                 { "name": "Delete User", "request": { "method": "DELETE", "header": [], "url": { "raw": "http://localhost/api/users/{id}", "protocol": "http", "host": ["localhost"], "path": ["api", "users", "{id}"] } } }
             ]
