@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\API;
 
+//use App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\Circle;
 use App\Traits\ApiResponseTrait;
@@ -51,11 +52,11 @@ class CircleController extends Controller
         $circle->delete();
         return $this->successResponse(null, 'Circle deleted successfully');
     }
-    public function search(Request $request)    
+    public function search(Request $request)
     {
         $query = $request->input('query');
         $circles = Circle::where('name', 'like', '%' . $query . '%')->get();
         return $this->successResponse($circles);
     }
-    
+
 }

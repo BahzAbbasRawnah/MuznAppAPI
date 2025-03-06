@@ -10,10 +10,11 @@ class CirclesCategory extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $fillable = [
-        'name',
-        'namevalue',
-    ];
+    protected $guarded=[];
+//    protected $fillable = [
+//        'name',
+//        'namevalue',
+//    ];
 
     // Relationships
     public function circles()

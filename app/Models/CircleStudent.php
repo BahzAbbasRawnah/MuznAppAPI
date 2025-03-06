@@ -10,11 +10,12 @@ class CircleStudent extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $fillable = [
-        'circle_id',
-        'student_id',
-        'teacher_id',
-    ];
+//    protected $fillable = [
+//        'circle_id',
+//        'student_id',
+//        'teacher_id',
+//    ];
+    protected $guarded=[];
 
     // Relationships
     public function circle()
