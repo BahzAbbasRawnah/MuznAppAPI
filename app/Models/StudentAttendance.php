@@ -10,6 +10,7 @@ class StudentAttendance extends Model
 {
     use HasFactory, SoftDeletes;
     protected $guarded=[];
+    protected $table='student_attendance';
 //    protected $fillable = [
 //        'student_id',
 //        'circle_id',

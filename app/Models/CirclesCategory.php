@@ -10,6 +10,7 @@ class CirclesCategory extends Model
 {
     use HasFactory, SoftDeletes;
 
+    protected  $table='circles_category';
     protected $guarded=[];
 //    protected $fillable = [
 //        'name',
