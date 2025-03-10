@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\API\DatabaseSyncController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\UserController;
@@ -38,6 +39,9 @@ Route::apiResource('circle-students', CircleStudentController::class);
 
 // Student Attendance Routes
 Route::apiResource('student-attendances', StudentAttendanceController::class);
+
+
+Route::post('/sync', [DatabaseSyncController::class, 'sync']);
 
 // Homework Routes
 Route::apiResource('homeworks', HomeworkController::class);

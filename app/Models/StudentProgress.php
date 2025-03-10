@@ -10,16 +10,17 @@ class StudentProgress extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $fillable = [
-        'homework_id',
-        'student_id',
-        'reading_rating',
-        'review_rating',
-        'telawah_rating',
-        'reading_wrong',
-        'tajweed_wrong',
-        'tashqeel_wrong',
-    ];
+    protected $guarded=[];
+//    protected $fillable = [
+//        'homework_id',
+//        'student_id',
+//        'reading_rating',
+//        'review_rating',
+//        'telawah_rating',
+//        'reading_wrong',
+//        'tajweed_wrong',
+//        'tashqeel_wrong',
+//    ];
 
     // Relationships
     public function homework()

@@ -10,17 +10,18 @@ class Circle extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $fillable = [
-        'school_id',
-        'teacher_id',
-        'name',
-        'description',
-        'circle_category_id',
-        'circle_type',
-        'circle_time',
-        'jitsi_link',
-        'recording_url',
-    ];
+    protected $guarded=[];
+//    protected $fillable = [
+//        'school_id',
+//        'teacher_id',
+//        'name',
+//        'description',
+//        'circle_category_id',
+//        'circle_type',
+//        'circle_time',
+//        'jitsi_link',
+//        'recording_url',
+//    ];
 
     // Relationships
     public function school()

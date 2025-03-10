@@ -9,17 +9,17 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class User extends Model
 {
     use HasFactory, SoftDeletes;
-
-    protected $fillable = [
-        'full_name',
-        'email',
-        'password',
-        'phone',
-        'country',
-        'gender',
-        'role',
-        'status',
-    ];
+    protected $guarded=[];
+//    protected $fillable = [
+//        'full_name',
+//        'email',
+//        'password',
+//        'phone',
+//        'country',
+//        'gender',
+//        'role',
+//        'status',
+//    ];
 
     // Relationships
     public function schools()

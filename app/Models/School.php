@@ -10,12 +10,13 @@ class School extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $fillable = [
-        'teacher_id',
-        'name',
-        'type',
-        'address',
-    ];
+    protected $guarded=[];
+//    protected $fillable = [
+//        'teacher_id',
+//        'name',
+//        'type',
+//        'address',
+//    ];
 
     // Relationships
     public function user()

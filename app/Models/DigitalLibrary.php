@@ -9,14 +9,14 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class DigitalLibrary extends Model
 {
     use HasFactory, SoftDeletes;
-
-    protected $fillable = [
-        'title',
-        'author',
-        'category',
-        'file_url',
-        'teacher_id',
-    ];
+    protected $guarded=[];
+//    protected $fillable = [
+//        'title',
+//        'author',
+//        'category',
+//        'file_url',
+//        'teacher_id',
+//    ];
 
     // Relationships
     public function user()

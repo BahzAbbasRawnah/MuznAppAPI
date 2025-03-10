@@ -9,11 +9,11 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Student extends Model
 {
     use HasFactory, SoftDeletes;
-
-    protected $fillable = [
-        'teacher_id',
-        'user_id',
-    ];
+    protected $guarded=[];
+//    protected $fillable = [
+//        'teacher_id',
+//        'user_id',
+//    ];
 
     // Relationships
     public function user()
